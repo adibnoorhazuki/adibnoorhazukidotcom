@@ -26,10 +26,6 @@ export const experience: Experience[] = [
         duration: "October 2021 - December 2021"
       },
       {
-        name: "Antah Medmal System",
-        duration: "June 2021 - Dec 2021"
-      },
-      {
         name: "Todak Master",
         duration: "Jan 2022 - Feb 2022"
       },
@@ -57,6 +53,20 @@ export const experience: Experience[] = [
   },
   {
     company: {
+      name: "Antah Broker Sdn Bhd",
+      icon: "company/antah-broker.svg",
+    },
+    position: 'Freelance',
+    duration: 'June 2021 - Dec 2021',
+    projects: [
+      {
+        name: "Antah Medmal System",
+        duration: "June 2021 - Dec 2021"
+      },
+    ]
+  },
+  {
+    company: {
       name: "Todak Digitech Sdn Bhd",
       icon: "company/todak-digitech.png",
     },
@@ -69,6 +79,20 @@ export const experience: Experience[] = [
       {
         name: "E-Kedai",
         duration: "November 2022 - January 2023"
+      },
+    ]
+  },
+  {
+    company: {
+      name: "KACS Sdn Bhd",
+      icon: "company/kacs.png",
+    },
+    position: 'Freelance',
+    duration: 'April 2024 - June 2024',
+    projects: [
+      {
+        name: "AINAA Beauty",
+        duration: "April 2024 - June 2024"
       },
     ]
   },
@@ -105,14 +129,6 @@ export const experience: Experience[] = [
         duration: "May 2024 - August 2024"
       },
       {
-        name: "AINAA Beauty",
-        duration: "April 2024 - June 2024"
-      },
-      {
-        name: "CVT CRM System",
-        duration: "October 2024 - November 2024"
-      },
-      {
         name: "Halo Telco Selfcare",
         duration: "August 2024 - December 2024"
       },
@@ -122,4 +138,20 @@ export const experience: Experience[] = [
       }
     ],
   },
+  {
+    company: {
+      name: "Forth North Sdn Bhd",
+      icon: "company/forth-north.png",
+    },
+    position: 'Freelance',
+    duration: 'October 2024 - Present',
+    projects: [
+      {
+        name: "CVT CRM System",
+        duration: "October 2024 - Present"
+      },
+    ]
+  },
 ]
+
+

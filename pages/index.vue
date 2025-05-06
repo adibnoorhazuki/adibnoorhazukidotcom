@@ -17,12 +17,12 @@ const isActiveAboutMe = ref('Professional')
       title="Hi, I am Adib Hazuki"
     >
       <Tabs :default-value="isActiveAboutMe" class="flex flex-1 items-center w-full gap-y-10">
-        <TabsList class="grid w-96 h-12 grid-cols-2">
+        <TabsList class="grid w-64 md:w-96 h-12 grid-cols-2">
           <TabsTrigger 
             v-for="(about, index) in aboutMe"
             :key="index"
             :value="about.name"
-            class="text-xl"
+            class="text-lg md:text-xl"
           >
             {{ about.name }}
           </TabsTrigger>

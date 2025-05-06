@@ -2,6 +2,15 @@ import type { Project } from "~/@types/project";
 
 export const projects: Project[] = [
   {
+    name: "CVT CRM System",
+    description: "Launched in November 2024, the CVT CRM system is a tailored software solution designed to help organizations manage client data and purchase records efficiently. It includes features for handling customer information, tracking products and purchases, and organizing tasks for staff, making it a comprehensive tool for client and sales management.",
+    image: null,
+    company: {
+      name: "Forth North Sdn Bhd",
+      icon: "company/forth-north.png",
+    },
+  },
+  {
     name: "Halo Telco Selfcare",
     description: "Halo Telco app is a mobile application that offers prepaid mobile services with a focus on affordability and flexibility. Beside that, this app also offers a feature for users to manage their plans, number and reloads. Key features typically include Top-up & Data Plans, Usage Monitoring, Bill & Payment History, Promotions and Referral Program.",
     image: "/project/halo-telco.png",
@@ -71,6 +80,15 @@ export const projects: Project[] = [
     company: {
       name: "Rocketsview Management Sdn Bhd",
       icon: "company/winner-venture.png",
+    },
+  },
+  {
+    name: "AINAA Beauty",
+    description: "AINAA Beauty app was launched in July 2024, is a system that is designed to facilitate seamless interactions between the company, its customers, and its network of entrepreneurs, known as 'Usahawan AINAA.' This system was developed to streamline the company's operations, integrating product sales, customer engagement, and entrepreneur support into a unified digital platform.",
+    image: null,
+    company: {
+      name: "KACS Sdn Bhd",
+      icon: "company/kacs.png",
     },
   },
   {
@@ -179,6 +197,15 @@ export const projects: Project[] = [
     company: {
       name: "Todak Culture Sdn Bhd",
       icon: "company/todak-culture.jpeg",
+    },
+  },
+  {
+    name: "Antah Medmal System",
+    description: "Antah Medmal was launched in December 2022, a management system for an insurance organisation to manage their policy holder and leads. This system offers an agent to register their client to register as a policy holder mainly focused on the medical industry. It also has a feature for the policy holder to customize their policy and download it through the system.",
+    image: null,
+    company: {
+      name: "Antah Broker Sdn Bhd",
+      icon: "company/antah-broker.svg",
     },
   }
 ];

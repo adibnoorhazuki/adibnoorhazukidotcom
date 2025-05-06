@@ -39,7 +39,7 @@ const onSubmit = handleSubmit((values) => {
 
 <template>
   <div class="container">
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid md:grid-cols-2 gap-4 px-2">
       <div class="flex flex-col">
         <h2 class="text-2xl font-bold mb-4">
           Hi there! I'm Muhammad Adib bin Noor Hazuki
