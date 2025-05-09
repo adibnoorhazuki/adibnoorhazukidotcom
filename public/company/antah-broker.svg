@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 615 615" width="615" height="615">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-74,1116.2h794.24v-1123.2h-794.24z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.txt0 { font-size: 37px;fill: #6a3e14;font-family: "Impact" } 
+		.shp1 { fill: #6a3e14 } 
+	</style>
+	<g id="g10">
+		<g id="g12">
+			<g id="Clip-Path: g14" clip-path="url(#cp1)">
+				<g id="g14">
+					<text id="tspan20" style="transform: matrix(1.131,0,0,1.333,23.843,445.938)" >
+						<tspan x="0" y="0" class="txt0">Antah Insurance Brokers Sdn Bhd </tspan>
+					</text>
+				</g>
+			</g>
+		</g>
+		<g id="g24">
+			<path id="path26" class="shp1" d="M396.59,222.56v159.8h-30.22l-8.01,-16.4h-78.21l-6.22,15.55h-34.66v-160.67h32.88v30.23h29.34v-28.51h34.65v28.51h28.45v-28.51zM346.82,328.81l-15.1,-39.74h-29.33l-12.46,39.74z" />
+		</g>
+	</g>
+</svg>

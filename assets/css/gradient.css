@@ -1,0 +1,117 @@
+:root {
+  --border-width: 2px;
+}
+
+/* Gradient Border */
+.gradient-border {
+  position: relative;
+  border-radius: 10px;
+}
+
+.gradient-border.rounded {
+  border-radius: 100% !important;
+}
+
+.gradient-border::after,
+.group:hover .gradient-border.inner::after,
+.gradient-border:hover::after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  border-radius: 10px;
+  background: var(--border);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+}
+
+.gradient-border.rounded::after {
+  border-radius: 100% !important;
+}
+
+.gradient-border:hover::after,
+.group:hover .gradient-border.inner::after {
+  background: var(--gradient);
+  background-size: 300% 300%;
+  animation: moveBGGradient 4s alternate infinite;
+}
+
+/* Gradient Text */
+.gradient-text {
+  color: currentColor;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.gradient-text:hover,
+.gradient-text.is-active {
+  background: var(--gradient);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: moveBGGradient 4s alternate infinite;
+}
+
+/* Gradient Background */
+.bg-gradient,
+.bg-gradient:hover {
+  background: var(--gradient);
+}
+
+.bg-gradient:hover {
+  background-size: 300% 300%;
+  animation: moveBGGradient 4s alternate infinite;
+}
+
+/* Focus Rings */
+.gradient-input-focus-ring:focus-visible,
+.gradient-focus-ring:focus-visible {
+  border: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image:
+    linear-gradient(var(--background), var(--background)),
+    var(--gradient);
+  background-size: 300% 300%;
+  animation: moveBGGradient 4s alternate infinite;
+}
+
+/* Open Trigger Gradient Border */
+.gradient-open-trigger {
+  position: relative;
+  z-index: 10;
+}
+
+.gradient-open-trigger[data-state="open"]::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 2px;
+  background: var(--gradient);
+  background-size: 300% 300%;
+  animation: moveBGGradient 4s alternate infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Keyframes */
+@keyframes moveBGGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
