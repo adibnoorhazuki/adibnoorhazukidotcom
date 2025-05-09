@@ -101,7 +101,7 @@ export const experience: Experience[] = [
       name: "Rocketsview Management Sdn Bhd",
       icon: "company/winner-venture.png",
     },
-    position: 'Senior Software Engineer cum Team Lead',
+    position: 'Senior Software Engineer cum Technical Lead',
     duration: 'February 2023 - Present',
     projects: [
       {

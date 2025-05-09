@@ -3,7 +3,7 @@ import type { HomepageCompany } from '@/@types/company'
 export const contributed: HomepageCompany[] = [
   {
     name: 'Todak Culture Sdn Bhd',
-    image: 'company/todak-culture.jpeg',
+    image: 'company/todak-culture-2.png',
   },
   {
     name: 'Todak Digitech Sdn Bhd',
@@ -23,7 +23,7 @@ export const clientele: HomepageCompany[] = [
   },
   {
     name: 'KACS Sdn Bhd',
-    image: 'company/kacs.png',
+    image: 'company/kacs-2.png',
   },
   {
     name: 'Forth North Sdn Bhd',

@@ -88,7 +88,7 @@ const isActiveAboutMe = ref('Professional')
         />
       </div>
 
-      <div class="w-full flex justify-end gap-2">
+      <div class="w-full flex justify-center md:justify-end gap-2">
         <Button
           variant="ghost"
           class="hover:bg-background gradient-text text-sm font-light"
