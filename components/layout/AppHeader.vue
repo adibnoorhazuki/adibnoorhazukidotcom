@@ -31,19 +31,11 @@ const isActive = (route: string) => {
 
 <template>
   <header class="mx-auto max-w-7xl flex justify-between items-start w-full py-5 px-2">
-    <div>
-      <!-- <img
-        src="/header-logo.svg"
-        alt="Adib Hazuki"
-        class="w-50 cursor-pointer"
-        @click="$router.push('/')"
-      /> -->
-      <span
-        class="text-4xl font-semibold gradient-text cursor-pointer header-font is-active"
-        @click="$router.push('/')"
-      >
-        Adib Hazuki
-      </span>
+    <div
+      class="cursor-pointer"
+      @click="$router.push('/')"
+    >
+      <img src="/header-logo.svg" alt="Logo" class="w-50" />
     </div>
 
     <div class="flex gap-4">
@@ -53,7 +45,10 @@ const isActive = (route: string) => {
             v-for="(item, index) in navigation"
             :key="index"
           >
-            <NavigationMenuLink :href="item.href" :class="cn('gradient-text hover:bg-background', isActive(item.href) ? 'is-active' : '')">
+            <NavigationMenuLink
+              :class="cn('gradient-text hover:bg-background cursor-pointer', isActive(item.href) ? 'is-active' : '')"
+              @click="$router.push(item.href)"
+            >
               {{ item.title }}
             </NavigationMenuLink>
           </NavigationMenuItem>
@@ -73,7 +68,7 @@ const isActive = (route: string) => {
               :key="index"
               variant="ghost"
               class="w-full text-left"
-              :href="item.href"
+              @click="$router.push(item.href)"
               as="a"
             >
               <span :class="cn('text-lg font-semibold gradient-text', isActive(item.href) ? 'is-active' : '')">

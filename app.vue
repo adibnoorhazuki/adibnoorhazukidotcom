@@ -4,16 +4,20 @@ useSeoMeta({
   ogTitle: 'Adib Hazuki',
   description: 'This is my amazing site, let me tell you all about it.',
   ogDescription: 'This is my amazing site, let me tell you all about it.',
-  ogImage: 'https://adib.dev/logo.svg',
 })
 
 useHead({
   link: [{ rel: 'icon', type: 'image/svg', href: 'favicon.svg' }],
 })
+
+const pageTransition = {
+  name: 'slide-down',
+  mode: 'out-in'
+}
 </script>
 
 <template>
-  <NuxtLayout class="bg-black">
-    <NuxtPage />
+  <NuxtLayout>
+    <NuxtPage :transition="pageTransition" />
   </NuxtLayout>
 </template>

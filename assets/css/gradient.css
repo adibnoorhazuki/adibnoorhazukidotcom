@@ -42,7 +42,6 @@
 /* Gradient Text */
 .gradient-text {
   color: currentColor;
-  font-weight: bold;
   display: inline-block;
 }
 

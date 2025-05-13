@@ -22,7 +22,7 @@ const isActiveAboutMe = ref('Professional')
             v-for="(about, index) in aboutMe"
             :key="index"
             :value="about.name"
-            class="text-lg md:text-xl"
+            class="text-lg md:text-xl cursor-pointer"
           >
             {{ about.name }}
           </TabsTrigger>

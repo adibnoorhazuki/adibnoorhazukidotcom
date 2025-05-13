@@ -15,8 +15,8 @@ const serviceInterests = [
 const formSchema = toTypedSchema(z.object({
   name: z.string().min(2).max(50),
   email: z.string().email().max(100),
-  employmentType: z.enum(serviceInterests.map((interest) => interest.value) as [string, ...string[]]),
-  message: z.string().max(500),
+  employmentType: z.enum(serviceInterests.map((interest) => interest.value) as [string, ...string[]], {message: 'Please select a service interest'}),
+  message: z.string().min(20).max(500),
 }))
 
 const { isFieldDirty, handleSubmit } = useForm({
@@ -24,7 +24,7 @@ const { isFieldDirty, handleSubmit } = useForm({
   initialValues: {
     name: '',
     email: '',
-    employmentType: serviceInterests[0].value,
+    employmentType: '',
     message: '',
   },
 })
@@ -38,14 +38,19 @@ const onSubmit = handleSubmit((values) => {
 </script>
 
 <template>
-  <div class="container">
-    <div class="grid md:grid-cols-2 gap-4 px-2">
-      <div class="flex flex-col">
-        <h2 class="text-2xl font-bold mb-4">
-          Hi there! I'm Muhammad Adib bin Noor Hazuki
-        </h2>
+  <div class="container flex justify-center">
+    <div class="grid md:grid-cols-2 gap-20">
+      <SectionContact>
+        <template v-slot:title>
+          <h1 class="text-lg font-thin">
+            Hi there!
+          </h1>
+          <h2 class="text-2xl font-bold mb-8">
+            I'm Muhammad Adib bin Noor Hazuki
+          </h2>
+        </template>
 
-        <div class="flex flex-col gap-4">
+        <div class="grid grid-cols-2 justify-center gap-9">
           <div v-for="social in socials" :key="social.title" class="flex items-center gap-5">
             <Button
               v-if="social.href"
@@ -77,14 +82,16 @@ const onSubmit = handleSubmit((values) => {
             </div>
           </div>
         </div>
-      </div>
+      </SectionContact>
 
-      <div class="flex flex-col">
-        <h2 class="text-2xl font-bold mb-4">
-          Let's Connect
-        </h2>
+      <SectionContact>
+        <template v-slot:title>
+          <h2 class="text-2xl font-bold mt-9 mb-6">
+            Let's Connect
+          </h2>
+        </template>
 
-        <form class="w-full space-y-6" @submit="onSubmit">
+        <form class="w-full space-y-4" @submit="onSubmit">
           <FormField v-slot="{ componentField }" name="name" :validate-on-blur="!isFieldDirty">
             <FormItem v-auto-animate>
               <FormLabel>
@@ -109,7 +116,7 @@ const onSubmit = handleSubmit((values) => {
             </FormItem>
           </FormField>
 
-          <FormField v-slot="{ componentField }" name="serviceInterest" :validate-on-blur="!isFieldDirty">
+          <FormField v-slot="{ componentField }" name="employmentType" :validate-on-blur="!isFieldDirty">
             <FormItem>
               <FormLabel>Service Interest</FormLabel>
 
@@ -153,7 +160,7 @@ const onSubmit = handleSubmit((values) => {
             Submit
           </Button>
         </form>
-      </div>
+      </SectionContact>
     </div>
   </div>
 </template>
