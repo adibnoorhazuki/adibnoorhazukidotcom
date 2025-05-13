@@ -4,7 +4,7 @@ export const socials: Social[] = [
   {
     title: 'Located At',
     icon: 'mingcute:location-line',
-    description: 'Kenwingston Square Garden Residence, 63000 Cyberjaya Selangor',
+    description: 'Cyberjaya Selangor',
     isShowInContact: true,
   },
   {
