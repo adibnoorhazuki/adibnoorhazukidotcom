@@ -80,6 +80,7 @@
   --sidebar-ring: oklch(0.709 0.01 56.259);
   --font-lato: 'Lato', sans-serif;
   --font-playfair: 'Playfair Display', serif;
+  --font-work-sans: 'Work Sans', sans-serif;
   --gradient: linear-gradient(
     60deg,
     hsl(198, 85%, 59%),
@@ -147,5 +148,5 @@ html {
 }
 
 .header-font {
-  font-family: var(--font-playfair);
+  font-family: var(--font-work-sans);
 }

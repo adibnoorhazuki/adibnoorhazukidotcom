@@ -4,7 +4,6 @@ useSeoMeta({
   ogTitle: 'Adib Hazuki',
   description: 'This is my amazing site, let me tell you all about it.',
   ogDescription: 'This is my amazing site, let me tell you all about it.',
-  ogImage: 'https://adib.dev/logo.svg',
 })
 
 useHead({
@@ -13,7 +12,7 @@ useHead({
 </script>
 
 <template>
-  <NuxtLayout class="bg-black">
+  <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
 </template>

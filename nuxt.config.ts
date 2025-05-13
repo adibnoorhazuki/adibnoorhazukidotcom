@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/tailwind.css', '~/assets/css/gradient.css'],
   googleFonts: {
-    families: { 'Lato': true, 'Playfair Display': true },
+    families: { 'Lato': true, 'Playfair Display': true, 'Work Sans': true },
     display: 'swap',
     preload: true,
     download: true,

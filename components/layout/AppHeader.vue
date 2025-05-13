@@ -31,19 +31,11 @@ const isActive = (route: string) => {
 
 <template>
   <header class="mx-auto max-w-7xl flex justify-between items-start w-full py-5 px-2">
-    <div>
-      <!-- <img
-        src="/header-logo.svg"
-        alt="Adib Hazuki"
-        class="w-50 cursor-pointer"
-        @click="$router.push('/')"
-      /> -->
-      <span
-        class="text-4xl font-semibold gradient-text cursor-pointer header-font is-active"
-        @click="$router.push('/')"
-      >
-        Adib Hazuki
-      </span>
+    <div
+      class="cursor-pointer"
+      @click="$router.push('/')"
+    >
+      <img src="/header-logo.svg" alt="Logo" class="w-50" />
     </div>
 
     <div class="flex gap-4">
