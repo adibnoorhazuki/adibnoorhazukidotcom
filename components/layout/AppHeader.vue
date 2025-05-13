@@ -45,7 +45,10 @@ const isActive = (route: string) => {
             v-for="(item, index) in navigation"
             :key="index"
           >
-            <NavigationMenuLink :href="item.href" :class="cn('gradient-text hover:bg-background', isActive(item.href) ? 'is-active' : '')">
+            <NavigationMenuLink
+              :class="cn('gradient-text hover:bg-background cursor-pointer', isActive(item.href) ? 'is-active' : '')"
+              @click="$router.push(item.href)"
+            >
               {{ item.title }}
             </NavigationMenuLink>
           </NavigationMenuItem>
@@ -65,7 +68,7 @@ const isActive = (route: string) => {
               :key="index"
               variant="ghost"
               class="w-full text-left"
-              :href="item.href"
+              @click="$router.push(item.href)"
               as="a"
             >
               <span :class="cn('text-lg font-semibold gradient-text', isActive(item.href) ? 'is-active' : '')">

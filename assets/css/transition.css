@@ -1,0 +1,14 @@
+.slide-down-enter-active,
+.slide-down-leave-active {
+  transition: all 0.7s ease;
+}
+
+.slide-down-enter-from {
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+.slide-down-leave-to {
+  transform: translateY(30px);
+  opacity: 0;
+}

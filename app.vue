@@ -9,10 +9,15 @@ useSeoMeta({
 useHead({
   link: [{ rel: 'icon', type: 'image/svg', href: 'favicon.svg' }],
 })
+
+const pageTransition = {
+  name: 'slide-down',
+  mode: 'out-in'
+}
 </script>
 
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <NuxtPage :transition="pageTransition" />
   </NuxtLayout>
 </template>

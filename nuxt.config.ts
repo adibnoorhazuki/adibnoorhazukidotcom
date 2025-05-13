@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  css: ['~/assets/css/tailwind.css', '~/assets/css/gradient.css'],
+  css: ['~/assets/css/tailwind.css', '~/assets/css/gradient.css', '~/assets/css/transition.css'],
   googleFonts: {
     families: { 'Lato': true, 'Playfair Display': true, 'Work Sans': true },
     display: 'swap',
