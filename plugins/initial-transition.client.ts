@@ -6,17 +6,22 @@ export default defineNuxtPlugin(() => {
     const app = document.getElementById('__nuxt')
 
     if (app) {
+      const main = document.querySelector('main')
+
+      if(!main) {
+        return
+      }
       // Apply initial "enter-from" styles
-      app.style.opacity = '0'
-      app.style.transform = 'translateY(-30px)'
+      main.style.opacity = '0'
+      main.style.transform = 'translateY(-30px)'
 
       // Force reflow so styles are applied before animation
-      void app.offsetWidth
+      void main.offsetWidth
 
       // Start transition
-      app.style.transition = 'all 1s ease'
-      app.style.opacity = '1'
-      app.style.transform = 'translateY(0)'
+      main.style.transition = 'all 1s ease'
+      main.style.opacity = '1'
+      main.style.transform = 'translateY(0)'
     }
   })
 })
