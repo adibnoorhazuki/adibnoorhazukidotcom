@@ -34,7 +34,7 @@ export const socials: Social[] = [
   {
     title: 'Follow me on LinkedIn',
     icon: 'mingcute:linkedin-line',
-    href: 'https://www.linkedin.com/in/adib-noor-hazuki-7367a91a8/',
+    href: 'https://www.linkedin.com/in/muhammad-adib-noor-hazuki-7367a91a8/',
     isShowInContact: true,
   },
   {
